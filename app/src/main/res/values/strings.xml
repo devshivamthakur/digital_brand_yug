@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Digital Brand Yug</string>
+    <string name="to_access_all_feature_of_this_app_you_need_to_login_first">To access all feature of this app , You need to login first</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="change_username">Change Username ? </string>
+    <string name="forgot_password">Forgot Password ? </string>
+    <string name="login">LOGIN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="number"> Enter number</string>
+    <string name="add_to_list">Add To List</string>
+    <string name="import_csv">Import CSV</string>
+    <string name="contact1">Contact No 1</string>
+    <string name="contact_filtering">Contact Filtering</string>
+    <string name="skip_filtering">Skip Filtering</string>
+    <string name="start_sending">Start Sending</string>
+    <string name="enter_text_message">Enter Text Message</string>
+</resources>

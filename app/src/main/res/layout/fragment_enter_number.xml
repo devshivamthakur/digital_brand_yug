@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EnterNumber">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+
+            android:id="@+id/ccp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            app:ccp_defaultCode="91"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_phone"
+            android:layout_toEndOf="@id/ccp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/number"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp"
+            android:padding="10dp"
+            android:maxLines="10"
+            android:inputType="textMultiLine"
+            />
+        <Button
+            android:layout_below="@id/edt_phone"
+            android:text="@string/add_to_list"
+            android:id="@+id/add_to_list"
+            android:layout_width="155dp"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/edt_phone"
+            android:text="@string/import_csv"
+            android:textAllCaps="false"
+
+            android:id="@+id/importcsv"
+            android:layout_width="155dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerview"
+            android:layout_margin="10dp"
+            android:layout_below="@id/importcsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="50dp"
+            android:src="@drawable/send"
+            app:rippleColor="@color/white"
+            app:backgroundTint="#F8079D"
+            />
+    </RelativeLayout>
+
+
+
+</FrameLayout>

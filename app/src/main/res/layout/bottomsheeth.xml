@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="32dp"
+    android:fitsSystemWindows="true"
+    android:id="@+id/bottomsheeth"
+    app:behavior_hideable="true"
+    android:backgroundTint="#E7E9EC"
+    app:behavior_peekHeight="16dp"
+    android:visibility="gone"
+    >
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/photo"/>
+            <ImageView
+                android:layout_weight="1"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/video"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/l1"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sound"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/person"/>
+            <ImageView
+                android:layout_weight="1"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_insert_drive_file_24"/>
+        </LinearLayout>
+
+</RelativeLayout>
